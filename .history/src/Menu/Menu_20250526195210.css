@@ -1,0 +1,78 @@
+/* Navbar container */
+.navbar {
+  background-color: var(--cinza-asfalto) !important;
+  border-bottom: 3px solid var(--dourado-fosco);
+  font-family: var(--fonte-principal);
+  letter-spacing: 1px;
+}
+
+/* Brand logo/text */
+.navbar-brand {
+  color: var(--dourado-fosco) !important;
+  font-family: var(--fonte-secundaria);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.navbar-brand:hover {
+  color: var(--vermelho-tijolo) !important;
+}
+
+/* Nav links */
+.nav-link {
+  color: var(--branco-puro) !important;
+  font-family: var(--fonte-principal);
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--dourado-fosco) !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: var(--cinza-medio);
+  border-radius: 0;
+  border: none;
+}
+.dropdown-item {
+  color: var(--branco-puro);
+  font-family: var(--fonte-principal);
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--vermelho-tijolo);
+  color: var(--branco-puro);
+}
+
+/* Search form */
+.form-control {
+  background-color: var(--cinza-medio);
+  color: var(--branco-puro);
+  border: 1px solid var(--dourado-fosco);
+  font-family: var(--fonte-principal);
+}
+.form-control::placeholder {
+  color: var(--bege-urbano);
+  opacity: 1;
+}
+
+/* Search button */
+.btn-outline-success {
+  color: var(--dourado-fosco);
+  border-color: var(--dourado-fosco);
+  font-family: var(--fonte-principal);
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline-success:hover {
+  background-color: var(--dourado-fosco);
+  color: var(--preto);
+  border-color: var(--dourado-fosco);
+}
