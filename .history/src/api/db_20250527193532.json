@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta YESHUA",
+      "preco": "R$ 299,90",
+      "imagem": "/src/assets/yeshua.png"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta YHWH",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh.png"
+    },
+    {
+      "id": 3,
+      "nome": "Camiseta Made New in Jesus",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/made_new.png"
+    },
+    {
+      "id": 4,
+      "nome": "Camiseta YHWH Menina",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh-menina.png"
+    },
+    {
+      "id": 5,
+      "nome": "Camiseta YHWH Kids",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh-kids.png"
+    }
+  ]
+}

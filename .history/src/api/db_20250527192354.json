@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta YESHUA",
+      "preco": "R$ 299,90",
+      "imagem": "/src/assets/yeshua.png"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta LOGO",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/logo.png"
+    }
+  ]
+}
