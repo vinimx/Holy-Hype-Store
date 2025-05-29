@@ -1,4 +1,4 @@
-import "./header.css";
+import ".header.css";
 // eslint-disable-next-line
 import { motion } from "framer-motion";
 
