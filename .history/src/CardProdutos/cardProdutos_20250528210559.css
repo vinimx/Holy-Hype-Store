@@ -1,0 +1,264 @@
+.slider-container {
+  padding: 0 1.5rem;
+  margin: 2rem 0;
+  overflow-x: hidden;
+}
+
+.slider-container .slick-slide {
+  padding: 0 0.7rem;
+}
+
+.slider-container .slick-list {
+  margin: 0 -0.7rem;
+}
+
+.slider-container .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.slider-container .slick-dots {
+  bottom: -40px;
+}
+
+.slider-container .slick-dots li button:before {
+  font-size: 12px;
+  color: var(--dourado-fosco);
+}
+
+.slider-container .slick-dots li.slick-active button:before {
+  color: var(--vermelho-tijolo);
+}
+
+/* Reset antigo do card */
+.produto-card,
+.produto-imagem,
+.produto-info,
+.produto-nome,
+.produto-preco,
+.btn-comprar,
+.produto-overlay {
+  all: unset;
+}
+
+/* Novo estilo moderno com Bootstrap */
+.produto-card {
+  min-width: 0;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 1.2rem;
+  position: relative;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  overflow: hidden;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.produto-card:hover .produto-imagem img {
+  transform: scale(1.05);
+}
+
+.produto-card .wishlist-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #b2b2b2;
+  font-size: 1.25rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.produto-card .wishlist-btn:hover {
+  background: #fff;
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
+.produto-imagem {
+  width: 100%;
+  min-height: 120px;
+  max-height: 180px;
+  background: #f8f9fa;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.produto-imagem::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.02));
+  pointer-events: none;
+}
+
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.produto-info {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.produto-nome {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+}
+
+.produto-preco {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #b28a3b;
+  margin: 0;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  position: relative;
+}
+
+.produto-preco::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #b28a3b;
+  transition: width 0.3s ease;
+}
+
+.produto-card:hover .produto-preco::after {
+  width: 100%;
+}
+
+.btn-comprar {
+  margin-top: 0.5rem;
+  width: 100%;
+  background: #2c3e50 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-comprar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.btn-comprar:hover {
+  background: #34495e !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(44, 62, 80, 0.15);
+}
+
+.btn-comprar:hover::before {
+  left: 100%;
+}
+
+@media (min-width: 600px) {
+  .slider-container {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 2.5rem;
+  }
+  
+  .produto-card {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .produto-imagem {
+    min-height: 160px;
+    max-height: 220px;
+  }
+  
+  .produto-nome {
+    font-size: 1.2rem;
+  }
+  
+  .produto-preco {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 3rem;
+  }
+  
+  .produto-card {
+    padding: 2rem;
+    gap: 1.8rem;
+  }
+  
+  .produto-imagem {
+    min-height: 200px;
+    max-height: 260px;
+  }
+  
+  .produto-nome {
+    font-size: 1.3rem;
+  }
+  
+  .produto-preco {
+    font-size: 1.4rem;
+  }
+  
+  .btn-comprar {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+}
