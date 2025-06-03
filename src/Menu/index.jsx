@@ -66,7 +66,7 @@ export default function Menu() {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <Navbar.Brand href="#">
-              <img src="/public/imagens/logo-menu.png" alt="Holy Hype Store" />
+              <img src="/imagens/logo-menu.png" alt="Holy Hype Store" />
             </Navbar.Brand>
           </motion.div>
 
