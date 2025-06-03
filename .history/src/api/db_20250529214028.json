@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta YESHUA",
+      "preco": "R$ 299,90",
+      "imagem": "/src/assets/yeshua.png",
+      "alt": "Camiseta YESHUA",
+      "secao": "produtos"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta YHWH Marrom",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh.png",
+      "alt": "Camiseta YHWH Maroom",
+      "secao": "produtos"
+    },
+    {
+      "id": 3,
+      "nome": "Camiseta Made New in Jesus",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/made_new.png",
+      "alt": "Camiseta Made New in Jesus",
+      "secao": "produtos"
+    },
+    {
+      "id": 4,
+      "nome": "Camiseta You are Holy",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/you_are_holy.png",
+      "alt": "Camiseta You are Holy",
+      "secao": "produtos"
+    },
+    {
+      "id": 5,
+      "nome": "Camiseta YHWH Branca",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh_branca.png",
+      "alt": "Camiseta YHWH Branca",
+      "secao": "produtos"
+    },
+    {
+      "id": 6,
+      "nome": "Camiseta Jesus Saves",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/jesus_saves.png",
+      "alt": "Camiseta Jesus Saves",
+      "secao": "produtos"
+    }
+  ]
+}

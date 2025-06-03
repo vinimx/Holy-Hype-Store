@@ -1,0 +1,30 @@
+.mostrar-drop {
+  margin-top: 2em;
+  width: 100%;
+  max-width: 100vw;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mostrar-drop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .mostrar-drop {
+    height: 60vh;
+    max-height: 600px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .mostrar-drop img {
+    object-fit: contain;
+  }
+}

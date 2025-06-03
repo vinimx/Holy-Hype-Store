@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta YESHUA Preta",
+      "preco": "R$ 299,90",
+      "imagem": "/src/assets/YESHUA BLACK/BLACK_FRONT.png",
+      "alt": "Camiseta YESHUA Preta",
+      "secao": "produtos"
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta YHWH Marrom",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/YHWH MARROM/BROWN_FRONT.png",
+      "alt": "Camiseta YHWH Marrom",
+      "secao": "produtos"
+    },
+    {
+      "id": 3,
+      "nome": "Camiseta Made New in Jesus",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assests/MADE NEW IN JESUS/WHITE_FRONT.png",
+      "alt": "Camiseta Made New in Jesus",
+      "secao": "produtos"
+    },
+    {
+      "id": 4,
+      "nome": "Camiseta YHWH Branca",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yhwh_branca.png",
+      "alt": "Camiseta YHWH Branca",
+      "secao": "produtos"
+    },
+    {
+      "id": 6,
+      "nome": "Camiseta YESHUA Preta",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/yeshua_preta.png",
+      "alt": "Camiseta YESHUA Preta",
+      "secao": "produtos"
+    },
+    {
+      "id": 7,
+      "nome": "Camiseta Psalms",
+      "preco": "R$ 199,90",
+      "imagem": "/src/assets/psalms.png",
+      "alt": "Camiseta Psalms",
+      "secao": "produtos drop"
+    }
+  ]
+}
