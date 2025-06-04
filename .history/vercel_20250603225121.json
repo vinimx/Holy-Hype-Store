@@ -2,6 +2,10 @@
   "version": 2,
   "builds": [
     {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -11,8 +15,16 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "/api/videos",
+      "dest": "/api/videos.js"
+    },
+    {
+      "src": "/api/banners",
+      "dest": "/api/banners.js"
+    },
+    {
+      "src": "/api/produtos",
+      "dest": "/api/produtos.js"
     },
     {
       "handle": "filesystem"
