@@ -3,7 +3,6 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![JSON Server](https://img.shields.io/badge/JSON%20Server-333?style=for-the-badge&logo=json&logoColor=white)](https://github.com/typicode/json-server)
 [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)](#)
 
 > ⚠️ **Este projeto está em constante evolução.**  
@@ -21,7 +20,7 @@ Além do design, o projeto foca em:
 
 - Prototipagem rápida de interfaces com React.
 - Testes de performance visual e responsiva.
-- Integração com dados simulados via API fake.
+- Dados estáticos para simulação de produtos e conteúdo.
 - Exploração de animações microinterativas com Framer Motion.
 
 ---
@@ -33,7 +32,6 @@ Além do design, o projeto foca em:
 - **Framer Motion** – Responsável pelas animações suaves, hover effects e transições de componentes.
 - **React Slick** – Carrossel elegante para exibição dos produtos em destaque.
 - **React Icons** – Ícones modernos para ações e elementos visuais (ex: wishlist).
-- **JSON Server** – Utilizado como mock de API REST para simular dados reais dos produtos.
 - **CSS Customizado** – Camada adicional de personalização da interface e identidade visual.
 
 ---
@@ -55,7 +53,7 @@ A interface está sendo desenvolvida com abordagem **mobile-first**, com foco em
 - Cards de produtos com animações e botão "Comprar".
 - Ícone de wishlist integrado à interface.
 - Slider/carrossel de produtos em destaque.
-- API fake com dados dinâmicos de produtos.
+- Dados estáticos para simulação de produtos e conteúdo.
 
 ---
 
@@ -85,13 +83,7 @@ A interface está sendo desenvolvida com abordagem **mobile-first**, com foco em
    npm install
    ```
 
-3. **Inicie o servidor JSON (mock API):**
-
-   ```bash
-   npx json-server --watch db.json --port 5000
-   ```
-
-4. **Inicie o projeto React:**
+3. **Inicie o projeto React:**
    ```bash
    npm start
    ```
@@ -100,7 +92,7 @@ A interface está sendo desenvolvida com abordagem **mobile-first**, com foco em
 
 ## 🏷️ Tags
 
-`react` `ecommerce` `prototipo` `bootstrap` `framer-motion` `json-server` `ui/ux` `responsivo` `streetwear` `cristão`
+`react` `ecommerce` `prototipo` `bootstrap` `framer-motion` `ui/ux` `responsivo` `streetwear` `cristão`
 
 ---
 
