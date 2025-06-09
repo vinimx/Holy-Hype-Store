@@ -4,10 +4,17 @@ import Menu from "./Menu";
 import Header from "./Header";
 import CardProdutos from "./CardProdutos";
 import MostrarDrop from "./MostrarDrop";
-import { produtos } from "./data";
+import { useEffect, useState } from "react";
 import Rodape from "./Rodape";
-
 function App() {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/produtos")
+      .then((res) => res.json())
+      .then((data) => setProdutos(data));
+  }, []);
+
   const produtosPrincipais = produtos.filter((p) => p.secao === "produtos");
 
   return (
