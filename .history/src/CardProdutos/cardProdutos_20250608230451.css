@@ -56,12 +56,11 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   overflow: hidden;
   border: 1px solid rgba(200, 169, 81, 0.1);
   margin: 0 auto;
-  width: 100%;
-  max-width: 350px;
+  max-width: 320px;
 }
 
 .produto-card:hover {
@@ -110,14 +109,15 @@
 /* Product Image */
 .produto-imagem {
   width: 100%;
-  height: 280px;
+  height: 100%;
   border-radius: 1rem;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   overflow: hidden;
   position: relative;
   margin: 0.5rem 0;
+  flex: 1 1 auto;
 }
 
 .produto-imagem::after {
@@ -144,7 +144,6 @@
   gap: 0.8rem;
   position: relative;
   width: 100%;
-  flex: 1;
 }
 
 .produto-info::before {
@@ -172,11 +171,6 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   width: 100%;
-  min-height: 3.2em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .produto-preco {
@@ -227,7 +221,7 @@
   overflow: hidden !important;
   z-index: 1 !important;
   width: 100% !important;
-  margin-top: auto !important;
+  margin-top: 0.5rem !important;
   box-shadow: 0 4px 15px rgba(200, 169, 81, 0.2) !important;
 }
 
@@ -276,17 +270,14 @@
   .produto-card {
     padding: 1rem;
     gap: 1rem;
-    max-width: 300px;
   }
 
   .produto-imagem {
-    height: 220px;
     margin: 0.3rem 0;
   }
 
   .produto-nome {
     font-size: 1rem;
-    min-height: 2.8em;
   }
 
   .produto-preco {
@@ -307,32 +298,29 @@
 
 @media (min-width: 600px) {
   .slider-container {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     margin: 3.5rem 0;
   }
 
   .slider-container .slick-slide {
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
   }
 
   .slider-container .slick-list {
-    margin: 0 -0.5rem;
+    margin: 0 -0.8rem;
   }
 
   .produto-card {
     padding: 1.5rem;
     gap: 1.5rem;
-    max-width: 350px;
   }
 
   .produto-imagem {
-    height: 280px;
     margin: 0.8rem 0;
   }
 
   .produto-nome {
     font-size: 1.2rem;
-    min-height: 3.2em;
   }
 
   .produto-preco {
@@ -353,32 +341,29 @@
 
 @media (min-width: 1024px) {
   .slider-container {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     margin: 4rem 0;
   }
 
   .slider-container .slick-slide {
-    padding: 0 0.8rem;
+    padding: 0 1rem;
   }
 
   .slider-container .slick-list {
-    margin: 0 -0.8rem;
+    margin: 0 -1rem;
   }
 
   .produto-card {
     padding: 1.8rem;
     gap: 1.8rem;
-    max-width: 400px;
   }
 
   .produto-imagem {
-    height: 320px;
     margin: 1rem 0;
   }
 
   .produto-nome {
     font-size: 1.3rem;
-    min-height: 3.6em;
   }
 
   .produto-preco {

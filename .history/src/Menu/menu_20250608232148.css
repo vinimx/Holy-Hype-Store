@@ -6,7 +6,7 @@
   border-bottom: 2px solid var(--dourado-fosco);
   font-family: var(--fonte-principal);
   letter-spacing: 1.5px;
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 12px rgba(30, 30, 30, 0.06);
   position: sticky;
   top: 0;
@@ -163,17 +163,18 @@
 .menu-icons {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
+  padding-left: 1rem;
 }
 
 .menu-icons svg {
   color: var(--cinza-asfalto);
   cursor: pointer;
-  font-size: 2.8rem;
+  font-size: 6rem !important;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(30, 30, 30, 0.08));
   border-radius: 50%;
-  padding: 8px;
+  padding: 20px;
   position: relative;
 }
 
@@ -226,8 +227,8 @@
   }
 
   .menu-icons svg {
-    font-size: 2.5rem;
-    padding: 7px;
+    font-size: 5.5rem !important;
+    padding: 18px;
   }
 }
 
@@ -297,14 +298,14 @@
   }
 
   .menu-icons.d-flex.d-lg-none {
-    position: absolute;
-    right: 5.5rem;
-    top: 0.7rem;
+    margin-right: auto;
+    gap: 1.8rem;
+    order: 1;
   }
 
   .menu-icons.d-flex.d-lg-none svg {
-    font-size: 2.3rem;
-    padding: 6px;
+    font-size: 5rem !important;
+    padding: 15px;
   }
 }
 
@@ -328,13 +329,12 @@
   }
 
   .menu-icons.d-flex.d-lg-none {
-    right: 4.5rem;
-    top: 0.6rem;
+    gap: 1.5rem;
   }
 
   .menu-icons.d-flex.d-lg-none svg {
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 4.5rem !important;
+    padding: 12px;
   }
 
   .nav-link {

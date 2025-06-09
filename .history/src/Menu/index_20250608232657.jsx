@@ -113,15 +113,6 @@ export default function Menu() {
               <CiUser />
             </motion.div>
           </div>
-
-          <div className="menu-icons d-flex d-lg-none">
-            <motion.div variants={iconVariants} whileHover="hover">
-              <CiShoppingCart/>
-            </motion.div>
-            <motion.div variants={iconVariants} whileHover="hover">
-              <CiUser />
-            </motion.div>
-          </div>
         </Container>
       </Navbar>
     </motion.div>
