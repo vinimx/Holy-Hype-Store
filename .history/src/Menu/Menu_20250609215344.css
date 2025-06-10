@@ -163,6 +163,7 @@
 .menu-icons {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .menu-icons svg {
@@ -201,10 +202,10 @@
 }
 
 .menu-icons .badge {
-  padding: 0.12em 0.5em;
-  min-width: 5px;
-  min-height: 5px;
-  background-color: none;
+  padding: 0.15em 0.5em;
+  min-width: 10px;
+  min-height: 10px;
+  background: none;
 }
 
 /* Responsive Styles */

@@ -6,7 +6,7 @@ import CardProdutos from "./CardProdutos";
 import MostrarDrop from "./MostrarDrop";
 import { produtos } from "./data";
 import Rodape from "./Rodape";
-import { CarrinhoProvider } from "./CarrinhoDeCompras";
+import { CarrinhoProvider } from "./AdicionarCarrinho/CarrinhoContext";
 
 function App() {
   const produtosPrincipais = produtos.filter((p) => p.secao === "produtos");

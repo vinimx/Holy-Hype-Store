@@ -105,7 +105,7 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
               viewport={{ once: true }}
             >
               <motion.button
-                className={`btn btn-light rounded-circle position-absolute top-0 end-0 border ${
+                className={`btn btn-light rounded-circle p-15 w-10 position-absolute top-0 end-0 m-2 border ${
                   favoritos[produto.id] ? "favorito" : ""
                 }`}
                 aria-label="Adicionar aos favoritos"
@@ -118,9 +118,12 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
                 whileHover="hover"
               >
                 {favoritos[produto.id] ? (
-                  <FaHeart size={20} className="text-danger" />
+                  <FaHeart size={30} className="text-danger" />
                 ) : (
-                  <FaRegHeart size={20} />
+                  <FaRegHeart size={30} />
+                )}
+                {getQuantidade(produto.id) > 0 && (
+                  <span>{getQuantidade(produto.id)}</span>
                 )}
               </motion.button>
               <div className="produto-imagem bg-light d-flex align-items-center justify-content-center rounded-3 mb-2">

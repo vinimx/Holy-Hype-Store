@@ -10,15 +10,14 @@ import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { useCarrinho } from "../CarrinhoDeCompras";
 
 export default function CardProdutos({ titulo, produtos: produtosProp }) {
-  const { adicionarAoCarrinho, removerDoCarrinho, getQuantidade } =
-    useCarrinho();
+  const { adicionarAoCarrinho, removerDoCarrinho, getQuantidade } = useCarrinho();
   const sliderRef = useRef();
   const [favoritos, setFavoritos] = useState({});
 
   const toggleFavorito = (produtoId) => {
-    setFavoritos((prev) => ({
+    setFavoritos(prev => ({
       ...prev,
-      [produtoId]: !prev[produtoId],
+      [produtoId]: !prev[produtoId]
     }));
   };
 
@@ -105,7 +104,7 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
               viewport={{ once: true }}
             >
               <motion.button
-                className={`btn btn-light rounded-circle position-absolute top-0 end-0 border ${
+                className={`btn btn-light rounded-circle p-2 position-absolute top-0 end-0 m-2 border ${
                   favoritos[produto.id] ? "favorito" : ""
                 }`}
                 aria-label="Adicionar aos favoritos"
@@ -121,6 +120,11 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
                   <FaHeart size={20} className="text-danger" />
                 ) : (
                   <FaRegHeart size={20} />
+                )}
+                {getQuantidade(produto.id) > 0 && (
+                  <span className="badge bg-danger ms-1">
+                    {getQuantidade(produto.id)}
+                  </span>
                 )}
               </motion.button>
               <div className="produto-imagem bg-light d-flex align-items-center justify-content-center rounded-3 mb-2">

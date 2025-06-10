@@ -163,6 +163,7 @@
 .menu-icons {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .menu-icons svg {
@@ -200,12 +201,7 @@
   transform: scale(1.2);
 }
 
-.menu-icons .badge {
-  padding: 0.12em 0.5em;
-  min-width: 5px;
-  min-height: 5px;
-  background-color: none;
-}
+.menu-icons .badge
 
 /* Responsive Styles */
 @media (max-width: 1199.98px) {

@@ -105,7 +105,7 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
               viewport={{ once: true }}
             >
               <motion.button
-                className={`btn btn-light rounded-circle position-absolute top-0 end-0 border ${
+                className={`btn btn-light rounded-circle position-absolute top-0 end-0 m-2 border ${
                   favoritos[produto.id] ? "favorito" : ""
                 }`}
                 aria-label="Adicionar aos favoritos"

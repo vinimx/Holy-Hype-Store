@@ -172,7 +172,7 @@
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(30, 30, 30, 0.08));
   border-radius: 50%;
-  padding: 8px;
+  padding: 28px;
   position: relative;
 }
 

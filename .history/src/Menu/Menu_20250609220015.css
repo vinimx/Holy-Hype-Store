@@ -163,6 +163,8 @@
 .menu-icons {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  padding: 10px;
 }
 
 .menu-icons svg {

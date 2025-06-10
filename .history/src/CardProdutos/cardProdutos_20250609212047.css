@@ -220,6 +220,7 @@
   width: 100%;
 }
 
+/* Buy Button */
 .btn-comprar {
   background: var(--dourado-fosco);
   color: var(--branco-puro) !important;
@@ -264,14 +265,6 @@
 
 .btn-comprar:hover::before {
   left: 100% !important;
-}
-
-.btn-light.rounded-circle {
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  min-height: 30px;
-  padding: 0;
 }
 
 /* Responsive Styles */

@@ -1,35 +1,15 @@
 import "./cardProdutos.css";
 // eslint-disable-next-line
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Produtos from "../Produtos";
-import { FaRegHeart, FaHeart } from "react-icons/fa";
-import { useCarrinho } from "../CarrinhoDeCompras";
+import { FaRegHeart } from "react-icons/fa";
 
 export default function CardProdutos({ titulo, produtos: produtosProp }) {
-  const { adicionarAoCarrinho, removerDoCarrinho, getQuantidade } =
-    useCarrinho();
   const sliderRef = useRef();
-  const [favoritos, setFavoritos] = useState({});
-
-  const toggleFavorito = (produtoId) => {
-    setFavoritos((prev) => ({
-      ...prev,
-      [produtoId]: !prev[produtoId],
-    }));
-  };
-
-  const handleCarrinhoClick = (produto) => {
-    if (getQuantidade(produto.id) > 0) {
-      removerDoCarrinho(produto.id);
-    } else {
-      adicionarAoCarrinho(produto);
-    }
-    toggleFavorito(produto.id);
-  };
 
   const settings = {
     dots: false,
@@ -79,12 +59,6 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
     },
   };
 
-  const heartVariants = {
-    initial: { scale: 1 },
-    animate: { scale: [1, 1.2, 1] },
-    hover: { scale: 1.1 },
-  };
-
   return (
     <>
       <Produtos
@@ -104,25 +78,14 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
               whileHover="whileHover"
               viewport={{ once: true }}
             >
-              <motion.button
-                className={`btn btn-light rounded-circle position-absolute top-0 end-0 border ${
-                  favoritos[produto.id] ? "favorito" : ""
-                }`}
+              <button
+                className="btn btn-light rounded-circle p-2 position-absolute top-0 end-0 m-2 border"
                 aria-label="Adicionar aos favoritos"
                 type="button"
                 tabIndex={0}
-                onClick={() => handleCarrinhoClick(produto)}
-                variants={heartVariants}
-                initial="initial"
-                animate={favoritos[produto.id] ? "animate" : "initial"}
-                whileHover="hover"
               >
-                {favoritos[produto.id] ? (
-                  <FaHeart size={20} className="text-danger" />
-                ) : (
-                  <FaRegHeart size={20} />
-                )}
-              </motion.button>
+                <FaRegHeart size={20} />
+              </button>
               <div className="produto-imagem bg-light d-flex align-items-center justify-content-center rounded-3 mb-2">
                 <img
                   src={produto.imagem}
@@ -140,7 +103,7 @@ export default function CardProdutos({ titulo, produtos: produtosProp }) {
                     {produto.preco}
                   </span>
                 </div>
-                <button className="btn btn-comprar" type="button">
+                <button className="" type="button">
                   Comprar
                 </button>
               </div>

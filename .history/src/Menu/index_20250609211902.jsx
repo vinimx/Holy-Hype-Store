@@ -17,10 +17,7 @@ export default function Menu() {
   });
 
   const { carrinho } = useCarrinho();
-  const totalItens = carrinho.reduce(
-    (total, item) => total + item.quantidade,
-    0
-  );
+  const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
 
   const menuVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -113,11 +110,7 @@ export default function Menu() {
           </Navbar.Collapse>
 
           <div className="menu-icons d-none d-lg-flex">
-            <motion.div
-              variants={iconVariants}
-              whileHover="hover"
-              className="position-relative"
-            >
+            <motion.div variants={iconVariants} whileHover="hover" className="position-relative">
               <CiShoppingCart />
               {totalItens > 0 && (
                 <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">
@@ -131,11 +124,7 @@ export default function Menu() {
           </div>
 
           <div className="menu-icons d-flex d-lg-none">
-            <motion.div
-              variants={iconVariants}
-              whileHover="hover"
-              className="position-relative"
-            >
+            <motion.div variants={iconVariants} whileHover="hover" className="position-relative">
               <CiShoppingCart />
               {totalItens > 0 && (
                 <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">

@@ -6,7 +6,6 @@ import CardProdutos from "./CardProdutos";
 import MostrarDrop from "./MostrarDrop";
 import { produtos } from "./data";
 import Rodape from "./Rodape";
-import { CarrinhoProvider } from "./CarrinhoDeCompras";
 
 function App() {
   const produtosPrincipais = produtos.filter((p) => p.secao === "produtos");
@@ -22,10 +21,4 @@ function App() {
   );
 }
 
-export default function AppWrapper() {
-  return (
-    <CarrinhoProvider>
-      <App />
-    </CarrinhoProvider>
-  );
-}
+export default App;

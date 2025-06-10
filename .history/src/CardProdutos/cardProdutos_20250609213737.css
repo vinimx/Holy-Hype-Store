@@ -267,11 +267,13 @@
 }
 
 .btn-light.rounded-circle {
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  min-height: 30px;
-  padding: 0;
+  width: 54px;
+  height: 54px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5;
 }
 
 /* Responsive Styles */

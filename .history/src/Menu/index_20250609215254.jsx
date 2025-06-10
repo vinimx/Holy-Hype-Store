@@ -138,7 +138,7 @@ export default function Menu() {
             >
               <CiShoppingCart />
               {totalItens > 0 && (
-                <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                <span className="badge bg-danger position-absolute top-0 translate-middle">
                   {totalItens}
                 </span>
               )}

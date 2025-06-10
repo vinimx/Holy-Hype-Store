@@ -97,12 +97,10 @@ export default function Menu() {
 
               {/* Coleções */}
               <motion.div key="Coleções" custom={2} variants={itemVariants}>
-                <NavDropdown title="Coleções" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Categoria</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Novidades</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">Promoções</NavDropdown.Item>
-                </NavDropdown>
+                <NavDropdown
+                  title="Coleções"
+                  id="navbarScrollingDropdown"
+                ></NavDropdown>
               </motion.div>
 
               {/* Sobre Nós */}
