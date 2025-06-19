@@ -1,1 +1,0 @@
-import "./rodape.css";

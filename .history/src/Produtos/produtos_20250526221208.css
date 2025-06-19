@@ -1,8 +1,0 @@
-.produtos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  font-family: var(--fonte-principal);
-  letter-spacing: 3px;
-}
